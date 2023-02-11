@@ -30,12 +30,12 @@ class TestFileStorageDocs(unittest.TestCase):
         """Set up for the doc tests"""
         cls.fs_f = inspect.getmembers(FileStorage, inspect.isfunction)
 
-       def test_file_storage_module_docstring(self):
-        """Test for the file_storage.py module docstring"""
+    def test_file_storage_module_docstring(self):
+        """Test for the file_storage.py module docstring""" 
         self.assertIsNot(file_storage.__doc__, None,
-                         "file_storage.py needs a docstring")
+        "file_storage.py needs a docstring")
         self.assertTrue(len(file_storage.__doc__) >= 1,
-                        "file_storage.py needs a docstring")
+        "file_storage.py needs a docstring")
 
     def test_file_storage_class_docstring(self):
         """Test for the FileStorage class docstring"""
